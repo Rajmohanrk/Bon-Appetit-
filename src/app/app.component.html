@@ -1,0 +1,11 @@
+<app-header (featureSel)="selectNav($event)"></app-header>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+          <app-recipes *ngIf="navFeature ==='recipe'" ></app-recipes>
+          <app-shopping-list *ngIf="navFeature !== 'recipe'"></app-shopping-list>
+        </div>
+        
+    </div>
+</div>
