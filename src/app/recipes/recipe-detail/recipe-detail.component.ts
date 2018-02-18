@@ -11,6 +11,9 @@ export class RecipeDetailComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    console.log(this.recipe);
   }
-
+  moveToSL(slectedIngredient){
+   
+  }
 }

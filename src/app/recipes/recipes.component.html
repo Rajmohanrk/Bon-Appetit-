@@ -1,6 +1,6 @@
 <div class="row">
 <div class="col-md-5">
-  <app-recipe-list (RecipeWasSelected)="recipeContent = $event"></app-recipe-list>
+  <app-recipe-list></app-recipe-list>
 </div>
 <div class="col-md-7">
   <app-recipe-detail *ngIf="recipeContent;else infoItem" [recipe]="recipeContent"></app-recipe-detail>
